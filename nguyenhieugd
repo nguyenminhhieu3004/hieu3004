@@ -1,0 +1,93 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPnHNu4yVS15uyEtL8yE6uS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nguyenminhhieu3004/hieu3004/blob/main/nguyenhieugd\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Vmj_OV5yewfG"
+      },
+      "source": [
+        "Nâng cao về vòng lặp for"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4rzj-Ao_e0bv",
+        "outputId": "f26e6ee9-5a55-4ef0-fcdc-a4a43cd5f8d1"
+      },
+      "source": [
+        "list2 = [({'name': 'Peter', 'age':2}, {'name': 'John', 'age':21}), \n",
+        "         ({'name': 'Mary', 'age':2}, {'name': 'Trandanpro', 'age':21}), \n",
+        "         ({'name': 'Nam', 'age':2}, {'name': 'Hung', 'age':21}), \n",
+        "         ({'name': 'Mai', 'age':2}, {'name': 'Loan', 'age':21})]\n",
+        "for i in list2:\n",
+        "   #print(i)\n",
+        "   for x in i :\n",
+        "     print(x)\n",
+        "     for count,y in enumerate(x,1):\n",
+        "       print(count,y,\":\",x[y])"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'name': 'Peter', 'age': 2}\n",
+            "1 name : Peter\n",
+            "2 age : 2\n",
+            "{'name': 'John', 'age': 21}\n",
+            "1 name : John\n",
+            "2 age : 21\n",
+            "{'name': 'Mary', 'age': 2}\n",
+            "1 name : Mary\n",
+            "2 age : 2\n",
+            "{'name': 'Trandanpro', 'age': 21}\n",
+            "1 name : Trandanpro\n",
+            "2 age : 21\n",
+            "{'name': 'Nam', 'age': 2}\n",
+            "1 name : Nam\n",
+            "2 age : 2\n",
+            "{'name': 'Hung', 'age': 21}\n",
+            "1 name : Hung\n",
+            "2 age : 21\n",
+            "{'name': 'Mai', 'age': 2}\n",
+            "1 name : Mai\n",
+            "2 age : 2\n",
+            "{'name': 'Loan', 'age': 21}\n",
+            "1 name : Loan\n",
+            "2 age : 21\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
